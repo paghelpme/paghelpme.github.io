@@ -1,13 +1,25 @@
 User-agent: *
 Allow: /
+Allow: /blog/
+Allow: /privacy/
+Allow: *.html
+Allow: *.xml
 
 # Sitemap
 Sitemap: https://paghelpme.github.io/sitemap.xml
 
-# Disallow specific files and directories (optional)
-Disallow: /src/
+# Important pages for PIX searches
+Allow: /pix.html
+Allow: /blog/posts/como-usar-pix-com-seguranca.html
+Allow: /blog/posts/5-melhores-apps-gerenciar-chaves-pix.html
+Allow: /blog/posts/gerenciar-chaves-pix-offline.html
+Allow: /blog/posts/5-recursos-essenciais-paghelp.html
+
+# Disallow unnecessary files
+Disallow: /src/img/screenshots/
 Disallow: /*.json
 Disallow: /*.md
+Disallow: /google2f3c5e7032b61a80.html
 
-# Crawl-delay (optional - in seconds)
+# Crawl optimization
 Crawl-delay: 1
