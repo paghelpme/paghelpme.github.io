@@ -36,6 +36,24 @@
     content="Fique por dentro das novidades sobre PIX, dicas de segurança e tutoriais para usar melhor o Paghelp.me.">
   <meta property="twitter:image" content="https://paghelpme.github.io/src/img/metatag.png">
 
+  <!-- Additional SEO Meta Tags -->
+  <meta name="rating" content="General">
+  <meta name="distribution" content="Global">
+  <meta name="geo.region" content="BR">
+  <meta name="geo.country" content="Brasil">
+  <meta name="coverage" content="Worldwide">
+  <meta name="target" content="all">
+  <meta name="audience" content="all">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://paghelpme.github.io/blog/">
+
+  <!-- Sitemap -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="../sitemap.xml">
+
+  <!-- RSS Feed -->
+  <link rel="alternate" type="application/rss+xml" title="Blog Paghelp.me - RSS Feed" href="./feed.xml">
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="../src/img/logo.png">
   <link rel="apple-touch-icon" href="../src/img/logo.png">
@@ -51,6 +69,65 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   <title>Blog Paghelp.me - Dicas e Novidades sobre PIX</title>
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog Paghelp.me",
+    "description": "Dicas, tutoriais e novidades sobre PIX, pagamentos digitais e o aplicativo Paghelp.me.",
+    "url": "https://paghelpme.github.io/blog/",
+    "inLanguage": "pt-BR",
+    "author": {
+      "@type": "Person",
+      "name": "Alexandre Sanlim"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Paghelp.me",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://paghelpme.github.io/src/img/logo.png",
+        "width": 400,
+        "height": 400
+      }
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "BlogPosting",
+          "position": 1,
+          "headline": "Os 5 melhores apps para gerenciar suas chaves PIX em 2024",
+          "url": "https://paghelpme.github.io/blog/posts/5-melhores-apps-gerenciar-chaves-pix.html",
+          "datePublished": "2024-09-27"
+        },
+        {
+          "@type": "BlogPosting",
+          "position": 2,
+          "headline": "Como usar PIX com segurança: Dicas essenciais para proteger suas transações",
+          "url": "https://paghelpme.github.io/blog/posts/como-usar-pix-com-seguranca.html",
+          "datePublished": "2024-09-27"
+        },
+        {
+          "@type": "BlogPosting",
+          "position": 3,
+          "headline": "Por que gerenciar suas chaves PIX offline? Conheça os benefícios",
+          "url": "https://paghelpme.github.io/blog/posts/gerenciar-chaves-pix-offline.html",
+          "datePublished": "2024-09-25"
+        },
+        {
+          "@type": "BlogPosting",
+          "position": 4,
+          "headline": "5 recursos do Paghelp.me que vão facilitar sua vida financeira",
+          "url": "https://paghelpme.github.io/blog/posts/5-recursos-essenciais-paghelp.html",
+          "datePublished": "2024-09-23"
+        }
+      ]
+    }
+  }
+  </script>
 
   <style>
     :root {
@@ -320,7 +397,31 @@
     <div class="row">
       <div class="col-lg-8">
         
-        <!-- Post 1 -->
+        <!-- Post 1 - NOVO -->
+        <article class="blog-post">
+          <h2>
+            <a href="./posts/5-melhores-apps-gerenciar-chaves-pix.html" class="blog-post-title">
+              Os 5 melhores apps para gerenciar suas chaves PIX em 2024
+            </a>
+          </h2>
+          <div class="blog-post-meta">
+            <i class="fas fa-calendar me-2"></i>27 de Setembro, 2024
+            <span class="mx-2">•</span>
+            <i class="fas fa-user me-2"></i>Alexandre Sanlim
+            <span class="mx-2">•</span>
+            <i class="fas fa-tag me-2"></i>Apps, PIX, Comparativo
+          </div>
+          <p class="blog-post-excerpt">
+            Descubra os 5 melhores aplicativos para gerenciar suas chaves PIX em 2024. Análise completa com 
+            prós e contras, preços e funcionalidades. O Paghelp.me lidera o ranking por sua privacidade total 
+            e funcionamento offline. Confira nossa comparação detalhada...
+          </p>
+          <a href="./posts/5-melhores-apps-gerenciar-chaves-pix.html" class="read-more-btn">
+            Ler mais <i class="fas fa-arrow-right ms-1"></i>
+          </a>
+        </article>
+
+        <!-- Post 2 -->
         <article class="blog-post">
           <h2>
             <a href="./posts/como-usar-pix-com-seguranca.html" class="blog-post-title">
@@ -344,7 +445,7 @@
           </a>
         </article>
 
-        <!-- Post 2 -->
+        <!-- Post 3 -->
         <article class="blog-post">
           <h2>
             <a href="./posts/gerenciar-chaves-pix-offline.html" class="blog-post-title">
@@ -408,12 +509,17 @@
             </li>
             <li class="mb-2">
               <a href="#" class="text-decoration-none" style="color: var(--text-secondary);">
-                <i class="fas fa-mobile-alt me-2"></i>Tutoriais (2)
+                <i class="fas fa-mobile-alt me-2"></i>Apps (1)
               </a>
             </li>
             <li class="mb-2">
               <a href="#" class="text-decoration-none" style="color: var(--text-secondary);">
-                <i class="fas fa-newspaper me-2"></i>Novidades (1)
+                <i class="fas fa-book me-2"></i>Tutoriais (2)
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none" style="color: var(--text-secondary);">
+                <i class="fas fa-newspaper me-2"></i>Comparativos (1)
               </a>
             </li>
             <li class="mb-2">
