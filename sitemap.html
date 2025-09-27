@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Mapa do site Paghelp.me - Encontre facilmente todas as páginas, posts do blog e recursos do nosso aplicativo PIX.">
+  <meta name="keywords"
+    content="sitemap, mapa do site, paghelp.me, navegação, pix, blog">
+  <meta name="author" content="Alexandre Sanlim">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="src/img/logo.png">
+  <link rel="apple-touch-icon" href="src/img/logo.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Sitemap -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml">
+
+  <title>Mapa do Site - Paghelp.me</title>
+
+  <style>
+    :root {
+      --primary-color: #667eea;
+      --secondary-color: #764ba2;
+      --accent-color: #004c40;
+      --text-primary: #2c3e50;
+      --text-secondary: #34495e;
+      --text-muted: #7f8c8d;
+      --bg-primary: #ffffff;
+      --glass-bg: rgba(102, 126, 234, 0.08);
+      --glass-border: rgba(102, 126, 234, 0.2);
+      --shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.12);
+      --border-radius: 20px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-primary);
+      line-height: 1.7;
+      color: var(--text-primary);
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(240, 147, 251, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(118, 75, 162, 0.03) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    /* Navigation Styles */
+    .navbar {
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.95) !important;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-brand {
+      font-weight: 600;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar-brand:hover {
+      transform: scale(1.05);
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      color: var(--text-primary) !important;
+      padding: 0.5rem 1rem !important;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      margin: 0 0.2rem;
+    }
+
+    .navbar-nav .nav-link:hover {
+      background: var(--glass-bg);
+      color: var(--accent-color) !important;
+      transform: translateY(-1px);
+    }
+
+    .navbar-nav .nav-link.active {
+      background: var(--accent-color);
+      color: white !important;
+    }
+
+    /* Sitemap Styles */
+    .sitemap-header {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--shadow);
+      border-radius: var(--border-radius);
+      padding: 3rem 2rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .sitemap-section {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--shadow);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+
+    .sitemap-section h2 {
+      color: var(--accent-color);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--glass-border);
+    }
+
+    .sitemap-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sitemap-links li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .sitemap-links li:last-child {
+      border-bottom: none;
+    }
+
+    .sitemap-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
+      padding: 0.5rem;
+      border-radius: 8px;
+    }
+
+    .sitemap-links a:hover {
+      color: var(--accent-color);
+      background: var(--glass-bg);
+      transform: translateX(5px);
+    }
+
+    .sitemap-links i {
+      margin-right: 0.75rem;
+      width: 20px;
+      text-align: center;
+    }
+
+    .page-description {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-left: 2rem;
+      margin-top: 0.25rem;
+    }
+
+    footer {
+      background: linear-gradient(135deg, var(--accent-color), #00695c) !important;
+      margin-top: 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    footer h5 {
+      color: #ffffff !important;
+      font-weight: 700 !important;
+    }
+
+    footer p {
+      color: rgba(255, 255, 255, 0.9) !important;
+    }
+
+    footer .text-white {
+      color: #ffffff !important;
+      transition: color 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .sitemap-header {
+        padding: 2rem 1.5rem;
+      }
+
+      .sitemap-section {
+        padding: 1.5rem;
+      }
+
+      .page-description {
+        margin-left: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="./">
+        <img src="src/img/logo.png" alt="Paghelp.me" width="40" height="40" class="me-2 rounded">
+        <strong style="color: var(--accent-color);">Paghelp.me</strong>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog/">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://play.google.com/store/apps/details?id=io.github.paghelpme" target="_blank">
+              <i class="fab fa-google-play me-1"></i>Download
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://paghelpme.expo.app/" target="_blank">
+              <i class="fas fa-globe me-1"></i>Versão Web
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="margin-top: 80px;">
+    
+    <!-- Sitemap Header -->
+    <div class="sitemap-header">
+      <h1 style="color: var(--accent-color); font-weight: 700; margin-bottom: 1rem;">
+        <i class="fas fa-sitemap me-3"></i>Mapa do Site
+      </h1>
+      <p class="lead" style="color: var(--text-secondary); margin-bottom: 0;">
+        Navegue facilmente por todas as páginas e recursos do Paghelp.me
+      </p>
+    </div>
+
+    <div class="row">
+      <!-- Páginas Principais -->
+      <div class="col-lg-6">
+        <div class="sitemap-section">
+          <h2><i class="fas fa-home me-2"></i>Páginas Principais</h2>
+          <ul class="sitemap-links">
+            <li>
+              <a href="./">
+                <i class="fas fa-house"></i>
+                <div>
+                  <strong>Página Inicial</strong>
+                  <div class="page-description">Apresentação do aplicativo e principais recursos</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./blog/">
+                <i class="fas fa-blog"></i>
+                <div>
+                  <strong>Blog</strong>
+                  <div class="page-description">Artigos sobre PIX, segurança e dicas financeiras</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./privacy/">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                  <strong>Política de Privacidade</strong>
+                  <div class="page-description">Informações sobre privacidade e proteção de dados</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="./sitemap.html">
+                <i class="fas fa-sitemap"></i>
+                <div>
+                  <strong>Mapa do Site</strong>
+                  <div class="page-description">Esta página - navegação estruturada do site</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Links Externos -->
+      <div class="col-lg-6">
+        <div class="sitemap-section">
+          <h2><i class="fas fa-external-link-alt me-2"></i>Links Externos</h2>
+          <ul class="sitemap-links">
+            <li>
+              <a href="https://play.google.com/store/apps/details?id=io.github.paghelpme" target="_blank">
+                <i class="fab fa-google-play"></i>
+                <div>
+                  <strong>Google Play Store</strong>
+                  <div class="page-description">Download do aplicativo Android</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://paghelpme.expo.app/" target="_blank">
+                <i class="fas fa-globe"></i>
+                <div>
+                  <strong>Versão Web</strong>
+                  <div class="page-description">Use o Paghelp.me direto no navegador</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Posts do Blog -->
+    <div class="sitemap-section">
+      <h2><i class="fas fa-newspaper me-2"></i>Artigos do Blog</h2>
+      <ul class="sitemap-links">
+        <li>
+          <a href="./blog/posts/5-melhores-apps-gerenciar-chaves-pix.html">
+            <i class="fas fa-trophy"></i>
+            <div>
+              <strong>Os 5 melhores apps para gerenciar suas chaves PIX em 2024</strong>
+              <div class="page-description">Comparativo completo dos melhores aplicativos PIX do mercado</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="./blog/posts/como-usar-pix-com-seguranca.html">
+            <i class="fas fa-shield-alt"></i>
+            <div>
+              <strong>Como usar PIX com segurança: Dicas essenciais</strong>
+              <div class="page-description">Guia completo de segurança para transações PIX</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="./blog/posts/gerenciar-chaves-pix-offline.html">
+            <i class="fas fa-wifi-slash"></i>
+            <div>
+              <strong>Por que gerenciar suas chaves PIX offline?</strong>
+              <div class="page-description">Benefícios da privacidade e gerenciamento local</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="./blog/posts/5-recursos-essenciais-paghelp.html">
+            <i class="fas fa-star"></i>
+            <div>
+              <strong>5 recursos do Paghelp.me que vão facilitar sua vida</strong>
+              <div class="page-description">Tutorial detalhado das principais funcionalidades</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Arquivos Técnicos -->
+    <div class="sitemap-section">
+      <h2><i class="fas fa-cog me-2"></i>Arquivos Técnicos</h2>
+      <ul class="sitemap-links">
+        <li>
+          <a href="./sitemap.xml">
+            <i class="fas fa-code"></i>
+            <div>
+              <strong>Sitemap XML</strong>
+              <div class="page-description">Sitemap para mecanismos de busca</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="./robots.txt">
+            <i class="fas fa-robot"></i>
+            <div>
+              <strong>Robots.txt</strong>
+              <div class="page-description">Instruções para crawlers de busca</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Informações Adicionais -->
+    <div class="sitemap-section">
+      <div class="text-center">
+        <h3 style="color: var(--accent-color); margin-bottom: 1rem;">
+          <i class="fas fa-info-circle me-2"></i>Informações
+        </h3>
+        <p style="color: var(--text-secondary);">
+          Este mapa do site é atualizado automaticamente conforme novas páginas e conteúdos são adicionados. 
+          Se você não encontrou o que procurava, entre em contato conosco através dos links de download do aplicativo.
+        </p>
+        <div class="mt-3">
+          <span class="badge bg-success me-2">
+            <i class="fas fa-calendar me-1"></i>Última atualização: 27/09/2024
+          </span>
+          <span class="badge bg-info me-2">
+            <i class="fas fa-file me-1"></i>10 páginas indexadas
+          </span>
+          <span class="badge bg-primary">
+            <i class="fas fa-blog me-1"></i>4 artigos no blog
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="py-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h5 style="color: white; font-weight: 600;">Paghelp.me!</h5>
+          <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1rem;">
+            O aplicativo mais completo para gerenciar suas chaves PIX de forma segura e offline.
+          </p>
+          <div class="d-flex gap-3 mb-3">
+            <a href="https://play.google.com/store/apps/details?id=io.github.paghelpme" class="text-white"
+              target="_blank">
+              <i class="fab fa-google-play fa-lg"></i>
+            </a>
+            <a href="https://paghelpme.expo.app/" class="text-white" target="_blank">
+              <i class="fas fa-globe fa-lg"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
+            Desenvolvido com ❤️ para facilitar seus pagamentos PIX
+          </p>
+          <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.8rem;">
+            © 2024 Paghelp.me - Todos os direitos reservados
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-3YA3SdH+5RX4vlDPXhVJiZhZpK4JYK5k2bEAKTH3nh0GCqMqwB/j4E8lQGK6Y+HX"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

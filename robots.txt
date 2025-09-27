@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://paghelpme.github.io/sitemap.xml
+
+# Disallow specific files and directories (optional)
+Disallow: /src/
+Disallow: /*.json
+Disallow: /*.md
+
+# Crawl-delay (optional - in seconds)
+Crawl-delay: 1
