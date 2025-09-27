@@ -5,11 +5,52 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO Meta Tags -->
   <meta name="description"
-    content="Paghelp.me! Gerencie todas as suas chaves Pix em um único aplicativo, e crie cobranças mesmo offline.">
+    content="Paghelp.me - O melhor app para gerenciar chaves PIX no Brasil. Crie cobranças, organize chaves, funciona offline. Gratuito e seguro. Baixe agora na Google Play!">
   <meta name="keywords"
-    content="pix, app, brasil, pagamento, pagementos, instântaneo, instantaneo, qr, code, api, brazil">
+    content="pix, chaves pix, app pix, pagamento instantâneo, qr code pix, cobranças pix, gerenciador pix, offline, brasil, pagamento digital, fintech, banco central">
   <meta name="author" content="Alexandre Sanlim">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="pt-BR">
+  <meta name="revisit-after" content="7 days">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://paghelpme.github.io/">
+  <meta property="og:title" content="Paghelp.me - Gerenciador de Chaves PIX Offline">
+  <meta property="og:description"
+    content="O melhor app para gerenciar suas chaves PIX. Crie cobranças, organize chaves, funciona offline. Gratuito, seguro e prático!">
+  <meta property="og:image" content="https://paghelpme.github.io/src/img/metatag.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Paghelp.me">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://paghelpme.github.io/">
+  <meta property="twitter:title" content="Paghelp.me - Gerenciador de Chaves PIX Offline">
+  <meta property="twitter:description"
+    content="O melhor app para gerenciar suas chaves PIX. Crie cobranças, organize chaves, funciona offline. Gratuito, seguro e prático!">
+  <meta property="twitter:image" content="https://paghelpme.github.io/src/img/metatag.png">
+
+  <!-- Apple iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Paghelp.me">
+
+  <!-- Microsoft -->
+  <meta name="msapplication-TileColor" content="#004c40">
+  <meta name="theme-color" content="#004c40">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://paghelpme.github.io/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="src/img/logo.png">
+  <link rel="apple-touch-icon" href="src/img/logo.png">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,8 +62,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-  <title>Paghelp.me! - Gerencie todas suas chaves Pix em um único App, crie cobranças mesmo offline, faça backup sem
-    necessidade de login e armazenamento e muito mais!</title>
+  <title>Paghelp.me - App Gerenciador de Chaves PIX Offline | Gratuito e Seguro</title>
 
   <style>
     :root {
@@ -93,16 +133,7 @@
       background: linear-gradient(45deg, transparent, rgba(102, 126, 234, 0.02), transparent);
       transform: rotate(45deg);
       transition: transform 0.6s ease;
-    }
-
-    .hero-section:hover::before {
-      transform: rotate(45deg) translate(10px, 10px);
-    }
-
-    .hero-section:hover {
-      transform: translateY(-8px);
-      box-shadow: var(--shadow-hover);
-      border-color: rgba(102, 126, 234, 0.3);
+      pointer-events: none;
     }
 
     .logo-container {
@@ -117,7 +148,7 @@
       border-radius: 30px;
       display: block;
       margin: 0 auto;
-      box-shadow: 
+      box-shadow:
         0 8px 32px rgba(0, 76, 64, 0.15),
         0 2px 8px rgba(0, 0, 0, 0.1);
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -132,7 +163,7 @@
       border-radius: 35px;
       -webkit-border-radius: 35px;
       -moz-border-radius: 35px;
-      box-shadow: 
+      box-shadow:
         0 12px 40px rgba(0, 76, 64, 0.25),
         0 4px 16px rgba(0, 0, 0, 0.15);
       animation: none;
@@ -140,13 +171,16 @@
 
     /* Efeito de pulsação suave para a logo */
     @keyframes logoPulse {
-      0%, 100% { 
-        box-shadow: 
+
+      0%,
+      100% {
+        box-shadow:
           0 8px 32px rgba(0, 76, 64, 0.15),
           0 2px 8px rgba(0, 0, 0, 0.1);
       }
-      50% { 
-        box-shadow: 
+
+      50% {
+        box-shadow:
           0 12px 36px rgba(0, 76, 64, 0.2),
           0 4px 12px rgba(0, 0, 0, 0.15);
       }
@@ -180,56 +214,65 @@
       margin-top: 2rem;
     }
 
-      .download-btn {
-        transition: transform 0.3s ease, filter 0.3s ease;
-      }
+    .download-btn {
+      display: inline-block;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      text-decoration: none;
+    }
 
-      .download-btn:hover {
-        transform: scale(1.05);
-        filter: brightness(1.1);
-      }
+    .download-btn:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+      text-decoration: none;
+    }
 
-      .web-app-btn {
-        background: linear-gradient(135deg, var(--accent-color) 0%, #00695c 100%);
-        color: white;
-        padding: 15px 30px;
-        border: none;
-        border-radius: 50px;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1.1rem;
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: 0 8px 25px rgba(0, 76, 64, 0.4);
-        position: relative;
-        overflow: hidden;
-      }
+    .download-btn img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
 
-      .web-app-btn::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-        transition: left 0.6s ease;
-      }
+    .web-app-btn {
+      background: linear-gradient(135deg, var(--accent-color) 0%, #00695c 100%);
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 8px 25px rgba(0, 76, 64, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
 
-      .web-app-btn:hover::before {
-        left: 100%;
-      }
+    .web-app-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: left 0.6s ease;
+    }
 
-      .web-app-btn:hover {
-        transform: translateY(-3px) scale(1.02);
-        box-shadow: 0 12px 30px rgba(0, 76, 64, 0.6);
-        color: white;
-        text-decoration: none;
-      }
+    .web-app-btn:hover::before {
+      left: 100%;
+    }
 
-      .screenshots-section {
+    .web-app-btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(0, 76, 64, 0.6);
+      color: white;
+      text-decoration: none;
+    }
+
+    .screenshots-section {
       background: var(--glass-bg);
       backdrop-filter: blur(20px);
       border: 1px solid var(--glass-border);
@@ -253,12 +296,14 @@
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-      .screenshot-img:hover {
-        transform: scale(1.08) translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        border-color: var(--accent-color);
-      }    footer {
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    .screenshot-img:hover {
+      transform: scale(1.08) translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      border-color: var(--accent-color);
+    }
+
+    footer {
+      background: linear-gradient(135deg, var(--accent-color), #00695c) !important;
       margin-top: 5rem;
       position: relative;
       overflow: hidden;
@@ -271,7 +316,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+      background: linear-gradient(45deg, transparent, rgba(0, 76, 64, 0.08), transparent);
       pointer-events: none;
     }
 
@@ -294,32 +339,34 @@
       color: var(--accent-color) !important;
     }
 
-      @media (max-width: 768px) {
-        h1 {
-          font-size: 2.5rem;
-        }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
 
-        .hero-section {
-          padding: 2rem 1.5rem;
-        }
+      .hero-section {
+        padding: 2rem 1.5rem;
+      }
 
-        .btn-container {
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-        }
+      .btn-container {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
 
-        .web-app-btn {
-          width: 100%;
-          max-width: 300px;
-          justify-content: center;
-          margin-top: 1rem;
-        }
+      .web-app-btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        margin-top: 1rem;
+      }
 
-        .screenshots-section {
-          padding: 2rem 1.5rem;
-        }
-      }    /* Animações adicionais */
+      .screenshots-section {
+        padding: 2rem 1.5rem;
+      }
+    }
+
+    /* Animações adicionais */
     @keyframes float {
 
       0%,
@@ -378,6 +425,46 @@
 
   </script>
 
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Paghelp.me",
+    "alternateName": "Paghelp",
+    "url": "https://paghelpme.github.io/",
+    "description": "Aplicativo gratuito para gerenciar chaves PIX no Brasil. Crie cobranças, organize chaves e funciona offline. Seguro e prático.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Android",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "BRL"
+    },
+    "downloadUrl": "https://play.google.com/store/apps/details?id=io.github.paghelpme",
+    "author": {
+      "@type": "Person",
+      "name": "Alexandre Sanlim"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Paghelp.me"
+    },
+    "inLanguage": "pt-BR",
+    "potentialAction": {
+      "@type": "ViewAction",
+      "target": "https://paghelpme.expo.app/"
+    },
+    "featureList": [
+      "Gerenciamento de chaves PIX",
+      "Criação de cobranças offline", 
+      "QR Code para pagamentos",
+      "Backup seguro",
+      "Interface intuitiva"
+    ]
+  }
+  </script>
+
 </head>
 
 <body>
@@ -393,14 +480,19 @@
           </figure>
         </div>
 
+       
+
         <div class="col-lg-8">
           <h1>Paghelp.me!</h1>
           <p class="lead">Gerencie todas as suas chaves Pix, crie cobranças, guarde chaves de contatos e muito mais!
           </p>
 
+
+
           <div class="btn-container">
-            <a href="https://play.google.com/store/apps/details?id=io.github.paghelpme" class="download-btn" target="_blank">
-              <img src="https://cdn.rawgit.com/steverichey/google-play-badge-svg/master/img/pt_get.svg" width="200"
+            <a href="https://play.google.com/store/apps/details?id=io.github.paghelpme" class="download-btn"
+              target="_blank">
+              <img src="https://cdn.jsdelivr.net/gh/steverichey/google-play-badge-svg@master/img/pt_get.svg" width="200"
                 alt="Baixar na Google Play">
             </a>
 
@@ -497,7 +589,8 @@
             O aplicativo mais completo para gerenciar suas chaves PIX de forma segura e offline.
           </p>
           <div class="d-flex gap-3 mb-3">
-            <a href="https://play.google.com/store/apps/details?id=io.github.paghelpme" class="text-white" target="_blank">
+            <a href="https://play.google.com/store/apps/details?id=io.github.paghelpme" class="text-white"
+              target="_blank">
               <i class="fab fa-google-play fa-lg"></i>
             </a>
             <a href="https://paghelpme.expo.app/" class="text-white" target="_blank">
