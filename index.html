@@ -1,322 +1,707 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Paghelp.me! Gerencie todas as suas chaves Pix em um único aplicativo, e crie cobranças mesmo offline.">
-    <meta name="keywords" content="pix, app, brasil, pagamento, pagementos, instântaneo, instantaneo, qr, code, api, brazil">
-    <meta name="author" content="Alexandre Sanlim">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Paghelp.me! - Gerencie todas suas chaves Pix em um único App, crie cobranças mesmo offline, faça backup sem necessidade de login e armazenamento e muito mais!</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Paghelp.me - O melhor app para gerenciar chaves PIX no Brasil. Crie cobranças, organize chaves, funciona offline. Gratuito e seguro. Baixe agora na Google Play!">
+  <meta name="keywords"
+    content="pix, chaves pix, app pix, pagamento instantâneo, qr code pix, cobranças pix, gerenciador pix, offline, brasil, pagamento digital, fintech, banco central">
+  <meta name="author" content="Alexandre Sanlim">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="pt-BR">
+  <meta name="revisit-after" content="7 days">
 
-    <!--add animation: gradient 60s ease infinite; to animation gradient, custom gradient here: https://cssgradient.io/-->
-    <!-- <style>
-      body {
-        background: rgb(0,139,125);
-background: linear-gradient(150deg, rgba(0,139,125,1) 0%, rgba(52,188,172,1) 38%, rgba(112,239,222,1) 78%);
-	background-size: 400% 400%;
-}
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://paghelpme.github.io/">
+  <meta property="og:title" content="Paghelp.me - Gerenciador de Chaves PIX Offline">
+  <meta property="og:description"
+    content="O melhor app para gerenciar suas chaves PIX. Crie cobranças, organize chaves, funciona offline. Gratuito, seguro e prático!">
+  <meta property="og:image" content="https://paghelpme.github.io/src/img/metatag.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Paghelp.me">
+  <meta property="og:locale" content="pt_BR">
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-    </style> -->
-	  
-	  <!-- Global site tag (gtag.js) - Google Ads: 879342772 -->
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://paghelpme.github.io/">
+  <meta property="twitter:title" content="Paghelp.me - Gerenciador de Chaves PIX Offline">
+  <meta property="twitter:description"
+    content="O melhor app para gerenciar suas chaves PIX. Crie cobranças, organize chaves, funciona offline. Gratuito, seguro e prático!">
+  <meta property="twitter:image" content="https://paghelpme.github.io/src/img/metatag.png">
+
+  <!-- Apple iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Paghelp.me">
+
+  <!-- Microsoft -->
+  <meta name="msapplication-TileColor" content="#004c40">
+  <meta name="theme-color" content="#004c40">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://paghelpme.github.io/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="src/img/logo.png">
+  <link rel="apple-touch-icon" href="src/img/logo.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <title>Paghelp.me - App Gerenciador de Chaves PIX Offline | Gratuito e Seguro</title>
+
+  <style>
+    :root {
+      --primary-color: #667eea;
+      --secondary-color: #764ba2;
+      --accent-color: #004c40;
+      --text-primary: #2c3e50;
+      --text-secondary: #34495e;
+      --text-muted: #7f8c8d;
+      --bg-primary: #ffffff;
+      --glass-bg: rgba(102, 126, 234, 0.08);
+      --glass-border: rgba(102, 126, 234, 0.2);
+      --shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.12);
+      --border-radius: 20px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-primary);
+      line-height: 1.7;
+      color: var(--text-primary);
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(240, 147, 251, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(118, 75, 162, 0.03) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .hero-section {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--shadow);
+      border-radius: var(--border-radius);
+      padding: 3rem 2rem;
+      margin: 2rem 0;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent, rgba(102, 126, 234, 0.02), transparent);
+      transform: rotate(45deg);
+      transition: transform 0.6s ease;
+      pointer-events: none;
+    }
+
+    .logo-container {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .logo-container img {
+      max-width: 160px;
+      width: 100%;
+      height: auto;
+      border-radius: 30px;
+      display: block;
+      margin: 0 auto;
+      box-shadow:
+        0 8px 32px rgba(0, 76, 64, 0.15),
+        0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      animation: logoPulse 3s ease-in-out infinite;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      overflow: hidden;
+    }
+
+    .logo-container img:hover {
+      transform: scale(1.1) translateY(-5px);
+      border-radius: 35px;
+      -webkit-border-radius: 35px;
+      -moz-border-radius: 35px;
+      box-shadow:
+        0 12px 40px rgba(0, 76, 64, 0.25),
+        0 4px 16px rgba(0, 0, 0, 0.15);
+      animation: none;
+    }
+
+    /* Efeito de pulsação suave para a logo */
+    @keyframes logoPulse {
+
+      0%,
+      100% {
+        box-shadow:
+          0 8px 32px rgba(0, 76, 64, 0.15),
+          0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      50% {
+        box-shadow:
+          0 12px 36px rgba(0, 76, 64, 0.2),
+          0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: none;
+      position: relative;
+    }
+
+    .lead {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      margin-bottom: 2.5rem;
+      line-height: 1.8;
+      font-weight: 400;
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .download-btn {
+      display: inline-block;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      text-decoration: none;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+      text-decoration: none;
+    }
+
+    .download-btn img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .web-app-btn {
+      background: linear-gradient(135deg, var(--accent-color) 0%, #00695c 100%);
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 8px 25px rgba(0, 76, 64, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .web-app-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .web-app-btn:hover::before {
+      left: 100%;
+    }
+
+    .web-app-btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(0, 76, 64, 0.6);
+      color: white;
+      text-decoration: none;
+    }
+
+    .screenshots-section {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--border-radius);
+      padding: 3rem 2rem;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .screenshots-section h2 {
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .screenshot-img {
+      border-radius: 20px;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .screenshot-img:hover {
+      transform: scale(1.08) translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      border-color: var(--accent-color);
+    }
+
+    footer {
+      background: linear-gradient(135deg, var(--accent-color), #00695c) !important;
+      margin-top: 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, transparent, rgba(0, 76, 64, 0.08), transparent);
+      pointer-events: none;
+    }
+
+    footer h5 {
+      color: #ffffff !important;
+      font-weight: 700 !important;
+      font-size: 1.5rem !important;
+    }
+
+    footer p {
+      color: rgba(255, 255, 255, 0.9) !important;
+    }
+
+    footer .text-white {
+      color: #ffffff !important;
+      transition: color 0.3s ease;
+    }
+
+    footer .text-white:hover {
+      color: var(--accent-color) !important;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-section {
+        padding: 2rem 1.5rem;
+      }
+
+      .btn-container {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .web-app-btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+      .screenshots-section {
+        padding: 2rem 1.5rem;
+      }
+    }
+
+    /* Animações adicionais */
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .logo-container img:hover {
+      animation: float 2s ease-in-out infinite;
+    }
+
+    /* Melhorias nos ícones dos recursos */
+    .fas {
+      transition: all 0.4s ease;
+    }
+
+    .fas:hover {
+      transform: scale(1.1) rotate(5deg);
+      filter: drop-shadow(0 10px 20px rgba(0, 76, 64, 0.3));
+    }
+
+    /* Gradiente personalizado nos títulos */
+    h2,
+    h4 {
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary-color), transparent);
+      border-radius: 2px;
+    }
+
+    /* Navigation Styles */
+    .navbar {
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.95) !important;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-brand {
+      font-weight: 600;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar-brand:hover {
+      transform: scale(1.05);
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      color: var(--text-primary) !important;
+      padding: 0.5rem 1rem !important;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      margin: 0 0.2rem;
+    }
+
+    .navbar-nav .nav-link:hover {
+      background: var(--glass-bg);
+      color: var(--accent-color) !important;
+      transform: translateY(-1px);
+    }
+
+    .navbar-nav .nav-link.active {
+      background: var(--accent-color);
+      color: white !important;
+    }
+
+    .navbar-nav .nav-link.active:hover {
+      background: var(--accent-color);
+      color: white !important;
+    }
+
+    @media (max-width: 991px) {
+      .navbar-nav .nav-link {
+        text-align: center;
+        margin: 0.2rem 0;
+      }
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Ads: 879342772 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-879342772"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'AW-879342772');
+    gtag('config', 'AW-879342772');
+
+    gtag('event', 'conversion', { 'send_to': 'AW-879342772/6p1oCMDR2_YBELTppqMD' });
+
+  </script>
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Paghelp.me",
+    "alternateName": "Paghelp",
+    "url": "https://paghelpme.github.io/",
+    "description": "Aplicativo gratuito para gerenciar chaves PIX no Brasil. Crie cobranças, organize chaves e funciona offline. Seguro e prático.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Android",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "BRL"
+    },
+    "downloadUrl": "https://play.google.com/store/apps/details?id=io.github.paghelpme",
+    "author": {
+      "@type": "Person",
+      "name": "Alexandre Sanlim"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Paghelp.me"
+    },
+    "inLanguage": "pt-BR",
+    "potentialAction": {
+      "@type": "ViewAction",
+      "target": "https://paghelpme.expo.app/"
+    },
+    "featureList": [
+      "Gerenciamento de chaves PIX",
+      "Criação de cobranças offline", 
+      "QR Code para pagamentos",
+      "Backup seguro",
+      "Interface intuitiva"
+    ]
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="src/img/logo.png" alt="Paghelp.me" width="40" height="40" class="me-2 rounded">
+        <strong style="color: var(--accent-color);">Paghelp.me</strong>
+      </a>
       
-      gtag('event', 'conversion', {'send_to': 'AW-879342772/6p1oCMDR2_YBELTppqMD'});
-
-    </script>
-	  
-  </head>
-  <body style="background-color: #16a085;">
-
-    <main class="container">
-        <div class="d-flex p-3 text-white my-3 rounded">
-            <div class="row">
-
-              <!-- SET YOUR LOGO HERE -->
-                <figure class="figure col-lg-3"><img src="src/img/logo.png" class="figure-img img-fluid rounded"></figure>
-
-                <div class="col-lg-9">
-
-                    <h1>Paghelp.me!</h1>
-                    <p class="lead">PIX é o método de pagamento instântaneo do Brasil, e o Paghelp.me! nasceu para que te auxilie a gerenciar todas as suas chaves em um único app,
-                      com a possibilidade de gerar cobranças, compartilhar rapidamente, entre outras funcionalidades totalmente offline e sem armazenar suas chaves na internet.
-                    </p>
-                    <!-- <p><img src="src/img/badges/ios.svg" width="35%"><img src="https://cdn.rawgit.com/steverichey/google-play-badge-svg/master/img/en_get.svg" width="43%"></p> -->
-                    <p><a href="https://play.google.com/store/apps/details?id=io.github.paghelpme"><img src="https://cdn.rawgit.com/steverichey/google-play-badge-svg/master/img/en_get.svg" width="43%"></a></p>
-
-                </div>
-            </div>
-
-        </div>
-
-        <div id="myCarousel" class="carousel slide my-3 rounded" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#005489"/></svg>
-        
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h2>Gerenciador de Chaves</h2>
-                    <p>Grencie todas suas chaves em um único app, melhorando a sua organização ou da sua empresa.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#005489"/></svg>
-        
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h2>Cobranças</h2>
-                    <p>Crie QR Codes para cobranças ou código copia e cola. Com o pix você recebe de forma instântanea direto na sua conta.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#005489"/></svg>
-        
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h2>Notícias</h2>
-                    <p>Fique por dentro das principais notícias sobre o PIX diretamente no APP.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       
-        <div class="my-3 p-3 rounded">
-          <!-- <h1 class="pb-2 mb-0 text-white">Screenshots</h1> -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog/">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://play.google.com/store/apps/details?id=io.github.paghelpme" target="_blank">
+              <i class="fab fa-google-play me-1"></i>Download
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://paghelpme.expo.app/" target="_blank">
+              <i class="fas fa-globe me-1"></i>Versão Web
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-          <!-- SET YOUR SCREENSHOTS HERE -->
-          <div class="row align-items-center">
-              <figure class="figure col-lg-3"><img src="src/img/screenshots/0-pagamento-brasil-brazil-qr-code-pix-off-instantaneo-paypay-nubank-picpay-itau-banco-do-brasil-caixa-auxilio-ferramenta.png" class="figure-img img-fluid rounded"></figure>
-              <figure class="figure col-lg-3"><img src="src/img/screenshots/1-pagamento-brasil-brazil-qr-code-pix-off-instantaneo-paypay-nubank-picpay-itau-banco-do-brasil-caixa-auxilio-ferramenta.png" class="figure-img img-fluid rounded"></figure>
-              <figure class="figure col-lg-3"><img src="src/img/screenshots/2-pagamento-brasil-brazil-qr-code-pix-off-instantaneo-paypay-nubank-picpay-itau-banco-do-brasil-caixa-auxilio-ferramenta.png" class="figure-img img-fluid rounded"></figure>
-              <figure class="figure col-lg-3"><img src="src/img/screenshots/3-pagamento-brasil-brazil-qr-code-pix-off-instantaneo-paypay-nubank-picpay-itau-banco-do-brasil-caixa-auxilio-ferramenta.png" class="figure-img img-fluid rounded"></figure>
-          </div>
+  <main class="container" style="margin-top: 80px;">
+    <div class="hero-section">
+      <div class="row align-items-center">
 
+        <!-- SET YOUR LOGO HERE -->
+        <div class="col-lg-4 logo-container">
+          <figure class="figure">
+            <img src="src/img/logo.png" alt="Paghelp.me Logo">
+          </figure>
         </div>
 
-        <div class="my-3">
-          <h1 class="pb-2 mb-0 text-white">Dúvidas Frequentes</h1>
-          <div class="accordion text-white" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed text-white" style="background-color: #005489;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  O que é o PIX?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  O PIX é um novo meio de pagamentos e transferências desenvolvido pelo Banco Central para facilitar as transações financeiras. Não é um aplicativo nem banco, e funciona com as contas que o cliente já tem em alguma instituição financeira.
-  
-  A expectativa do mercado é que o sistema seja o grande substituto de DOCs e TEDs, por ser gratuito e estar disponível a qualquer hora, sete dias por semana. A quantia cai instantaneamente.
-                </div>
-              </div>
+       
+
+        <div class="col-lg-8">
+          <h1>Paghelp.me!</h1>
+          <p class="lead">Gerencie todas as suas chaves Pix, crie cobranças, guarde chaves de contatos e muito mais!
+          </p>
+
+
+
+          <div class="btn-container">
+            <a href="https://play.google.com/store/apps/details?id=io.github.paghelpme" class="download-btn"
+              target="_blank">
+              <img src="https://cdn.jsdelivr.net/gh/steverichey/google-play-badge-svg@master/img/pt_get.svg" width="200"
+                alt="Baixar na Google Play">
+            </a>
+
+            <a href="https://paghelpme.expo.app/" class="web-app-btn" target="_blank">
+              <i class="fas fa-globe"></i>
+              Usar Versão Web
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="screenshots-section my-4">
+
+
+      <!-- SET YOUR SCREENSHOTS HERE -->
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <figure class="figure">
+            <img
+              src="src/img/screenshots/0-pagamento-brasil-brazil-qr-code-pix-off-instantaneo-paypay-nubank-picpay-itau-banco-do-brasil-caixa-auxilio-ferramenta.png"
+              class="figure-img img-fluid screenshot-img" alt="Screenshot 1">
+          </figure>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <figure class="figure">
+            <img
+              src="src/img/screenshots/1-pagamento-brasil-brazil-qr-code-pix-off-instantaneo-paypay-nubank-picpay-itau-banco-do-brasil-caixa-auxilio-ferramenta.png"
+              class="figure-img img-fluid screenshot-img" alt="Screenshot 2">
+          </figure>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <figure class="figure">
+            <img
+              src="src/img/screenshots/2-pagamento-brasil-brazil-qr-code-pix-off-instantaneo-paypay-nubank-picpay-itau-banco-do-brasil-caixa-auxilio-ferramenta.png"
+              class="figure-img img-fluid screenshot-img" alt="Screenshot 3">
+          </figure>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <figure class="figure">
+            <img
+              src="src/img/screenshots/3-pagamento-brasil-brazil-qr-code-pix-off-instantaneo-paypay-nubank-picpay-itau-banco-do-brasil-caixa-auxilio-ferramenta.png"
+              class="figure-img img-fluid screenshot-img" alt="Screenshot 4">
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção de Recursos Destacados -->
+    <div class="hero-section my-4">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="text-center p-3">
+            <div class="mb-3">
+              <i class="fas fa-key fa-3x" style="color: var(--accent-color);"></i>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed text-white" style="background-color: #005489;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Como se cadastrar?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  A adesão ao PIX será opcional e os bancos terão que confirmar com os clientes o efetivo cadastramento das chamadas "chaves PIX" para aqueles que fizeram o pré-cadastro antes de 5 de outubro.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading3">
-                <button class="accordion-button collapsed text-white" style="background-color: #005489;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                  O que é a Chave PIX?
-                </button>
-              </h2>
-              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  É a 'identificação' do usuário no sistema. A chave pode ser:
-  
-  um e-mail;
-  número do CPF;
-  número de telefone ou;
-  um código de números e letras aleatório chamado EVP.
-  Cada conta pode ter até cinco chaves diferentes destinadas a ela. O inverso também é possível: clientes podem ativar o PIX para diferentes contas de bancos que possua, mas é necessário usar diferentes chaves para cada conta.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading4">
-                <button class="accordion-button collapsed text-white" style="background-color: #005489;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                  Posso usar uma mesma chave para vários bancos?
-                </button>
-              </h2>
-              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  A pessoa física pode ter chaves em mais de uma instituição bancária, mas só pode ter uma modalidade por instituição. Se cadastrar o CPF em um determinado banco, por exemplo, ele só pode ser usado como chave naquele banco.
-  
-                  O cliente que tiver conta em mais de um banco deverá cadastrar uma chave PIX para cada um deles. Por exemplo: no banco A, o cliente cadastra o CPF; no banco B, cadastra o número de celular, e assim por diante.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading5">
-                <button class="accordion-button collapsed text-white" style="background-color: #005489;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                  Qual a diferença entre o PIX, o DOC e a TED?
-                </button>
-              </h2>
-              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Para os clientes, a principal diferença entre eles é que o novo sistema permite realizar as operações a qualquer dia e horário.
-  
-  No geral, a Transferência Eletrônica Disponível (TED) permite a movimentação de valores entre contas bancárias, sem limite de valor, com o crédito na conta de destino sendo realizado no mesmo dia, desde que feito até as 17h.
-  
-  Já o Documento de Ordem de Crédito (DOC) permite a transferência de, no máximo, R$ 4.999,99, com a compensação do crédito na conta de destino sendo efetivada no dia útil seguinte, ou em até dois dias úteis quando realizado aos finais de semana e/ou feriados.
-  
-  O PIX também será gratuito para as pessoas físicas, e vai precisar da inserção de menos dados para ser realizado.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading6">
-                <button class="accordion-button collapsed text-white" style="background-color: #005489;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                  Como é feito uma transferência, compra ou pagamento usando o PIX?
-                </button>
-              </h2>
-              <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  O uso poderá ser feito das seguintes formas:
-  
-                  Pela "chave de endereçamento" – e-mail, números de CPF ou CNPJ, número de celular ou código de números e letras aleatório chamado EVP;
-                  Por um link gerado pelo celular ou;
-                  Por leitura de QR Code.
-                  O pagador poderá fazer a operação inserindo a chave do recebedor, usando um link gerado pelo celular ou fazendo a leitura de QR Code. No comércio, por exemplo, o vendedor poderá gerar um QR Code, que o comprador vai 'ler' e pagar diretamente.
-                  
-                  Por enquanto, os pagamentos dependem de internet para serem realizados. Está prevista para 2021 uma forma de pagamento offline. Futuramente também será implementado também o "saque PIX", em que o recebedor poderá fazer saques em redes varejistas.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading7">
-                <button class="accordion-button collapsed text-white" style="background-color: #005489;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                  É preciso ser cliente de um banco?
-                </button>
-              </h2>
-              <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  O PIX estará disponível para quem tem conta em banco, mas instituições financeiras e fintechs também poderão ofertar a modalidade aos seus clientes. Para usar o serviço, bastará ter uma conta corrente, conta poupança ou uma carteira digital com cadastro no PIX. A opção estará dentro do aplicativo bancário e no internet banking do cliente.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading8">
-                <button class="accordion-button collapsed text-white" style="background-color: #005489;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                  Todos os bancos vão operar o PIX?
-                </button>
-              </h2>
-              <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Segundo o Banco Central, a oferta do PIX será obrigatória para um total de 34 instituições financeiras e de pagamentos com mais de 500 mil clientes ativos, considerando conta corrente, conta de poupança ou uma conta de pagamento pré-paga.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading9">
-                <button class="accordion-button collapsed text-white" style="background-color: #005489;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                  Quanto vai custar uma operação pelo PIX?
-                </button>
-              </h2>
-              <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Para as pessoas físicas, as transações serão gratuitas. Para pessoas jurídicas, no entanto, haverá cobrança de taxa para transferências, mas o Banco Central ainda não informou os valores.
-  
-  
-  Já para as instituições financeiras haverá um custo, que será "muito baixo", segundo o BC, pela utilização do serviço. A cada 10 transações pelo PIX, por exemplo, R$ 0,01 será cobrado a cargo de recuperação de custos operacionais.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading10">
-                <button class="accordion-button collapsed text-white" style="background-color: #005489;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                  O sistema é seguro?
-                </button>
-              </h2>
-              <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Como a tecnologia é instantânea, o Banco Central afirma que o PIX requer segurança redobrada para não ser suscetível a fraudes.
-  
-  Além de contar com o sistema de segurança da própria entidade, em setembro o Banco Central revisou uma regra sobre restituição de valores transferidos por suspeita de fraude. Se houver algum comprovação de crime, será possível fazer reembolso sem autorização da pessoa que recebeu o depósito.
-  
-  Além disso, Carlos Eduardo Brandt, chefe-adjunto do Departamento de Competição e de Estrutura do Mercado Financeiro do Banco Central, afirma que se for identificado um indício de fraude, o banco terá um tempo adicional de 30 minutos durante o dia e 60 minutos à noite para fazer uma verificação complementar e confirmar se a transação é verdadeira.
-                </div>
-              </div>
-            </div>
-         
+            <h4 style="color: var(--text-primary); font-weight: 600;">Gerenciamento de Chaves</h4>
+            <p style="color: var(--text-muted);">Organize todas suas chaves PIX em um único local, com segurança e
+              praticidade.</p>
           </div>
         </div>
 
-        <!-- <div class="my-3">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+        <div class="col-lg-4">
+          <div class="text-center p-3">
+            <div class="mb-3">
+              <i class="fas fa-qrcode fa-3x" style="color: var(--accent-color);"></i>
+            </div>
+            <h4 style="color: var(--text-primary); font-weight: 600;">QR Code Offline</h4>
+            <p style="color: var(--text-muted);">Gere cobranças e QR Codes mesmo sem conexão com a internet.</p>
           </div>
-        </div> -->
-
-      </main>
-
-      <footer class="text-muted py-5 mt-5" style="background-color: #005489;">
-        <div class="container text-white">
-         
-          <p></p>
         </div>
-      </footer>
-      
 
-    <!-- Optional JavaScript; choose one of the two! -->
+        <div class="col-lg-4">
+          <div class="text-center p-3">
+            <div class="mb-3">
+              <i class="fas fa-shield-alt fa-3x" style="color: var(--accent-color);"></i>
+            </div>
+            <h4 style="color: var(--text-primary); font-weight: 600;">Segurança Total</h4>
+            <p style="color: var(--text-muted);">Suas chaves não são armazenadas na internet, garantindo máxima
+              privacidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </main>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    -->
+  <footer class="py-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h5 style="color: white; font-weight: 600;">Paghelp.me!</h5>
+          <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1rem;">
+            O aplicativo mais completo para gerenciar suas chaves PIX de forma segura e offline.
+          </p>
+          <div class="d-flex gap-3 mb-3">
+            <a href="https://play.google.com/store/apps/details?id=io.github.paghelpme" class="text-white"
+              target="_blank">
+              <i class="fab fa-google-play fa-lg"></i>
+            </a>
+            <a href="https://paghelpme.expo.app/" class="text-white" target="_blank">
+              <i class="fas fa-globe fa-lg"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
+            Desenvolvido com ❤️ para facilitar seus pagamentos PIX
+          </p>
+          <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.8rem;">
+            © 2024 Paghelp.me - Todos os direitos reservados
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    
 
-  </body>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
