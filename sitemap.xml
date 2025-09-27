@@ -20,6 +20,14 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Feed RSS do Blog -->
+  <url>
+    <loc>https://paghelpme.github.io/blog/feed.xml</loc>
+    <lastmod>2024-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Política de Privacidade -->
   <url>
     <loc>https://paghelpme.github.io/privacy/</loc>
