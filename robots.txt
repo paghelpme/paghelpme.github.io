@@ -14,6 +14,15 @@ Allow: /blog/posts/como-usar-pix-com-seguranca.html
 Allow: /blog/posts/5-melhores-apps-gerenciar-chaves-pix.html
 Allow: /blog/posts/gerenciar-chaves-pix-offline.html
 Allow: /blog/posts/5-recursos-essenciais-paghelp.html
+Allow: /blog/posts/paghelp-versao-2-0-26-biometria-links-pagamento.html
+
+# Category pages
+Allow: /blog/categorias/pix.html
+Allow: /blog/categorias/seguranca.html
+Allow: /blog/categorias/apps.html
+Allow: /blog/categorias/tutoriais.html
+Allow: /blog/categorias/comparativos.html
+Allow: /blog/categorias/atualizacoes.html
 
 # Disallow unnecessary files
 Disallow: /src/img/screenshots/
