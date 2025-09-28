@@ -12,7 +12,7 @@
   <atom:link href="https://paghelpme.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
   <link>https://paghelpme.github.io/blog/</link>
   <description>Dicas, tutoriais e novidades sobre PIX, pagamentos digitais e o aplicativo Paghelp.me.</description>
-  <lastBuildDate>Fri, 27 Sep 2024 10:00:00 -0300</lastBuildDate>
+  <lastBuildDate>Sat, 28 Sep 2024 10:00:00 -0300</lastBuildDate>
   <language>pt-BR</language>
   <sy:updatePeriod>weekly</sy:updatePeriod>
   <sy:updateFrequency>1</sy:updateFrequency>
@@ -28,7 +28,33 @@
     <height>400</height>
   </image>
 
-  <!-- Post 1: 5 melhores apps PIX -->
+  <!-- Post 1: Nova versão 2.0.26 com Biometria -->
+  <item>
+    <title>Paghelp.me 2.0.26: Biometria e Links de Pagamento chegam ao app PIX</title>
+    <link>https://paghelpme.github.io/blog/posts/paghelp-versao-2-0-26-biometria-links-pagamento.html</link>
+    <description>Conheça as novidades da versão 2.0.26 do Paghelp.me: autenticação biométrica para acesso seguro e links de pagamento para facilitar o compartilhamento PIX.</description>
+    <content:encoded><![CDATA[
+      <p>A versão 2.0.26 representa um grande passo na evolução do Paghelp.me, trazendo funcionalidades essenciais que nossos usuários tanto solicitavam.</p>
+      <p><strong>Principais novidades:</strong></p>
+      <ul>
+        <li><strong>Autenticação Biométrica:</strong> Proteja o acesso ao app usando impressão digital ou reconhecimento facial</li>
+        <li><strong>Links de Pagamento:</strong> Gere links diretos para suas chaves PIX e compartilhe facilmente</li>
+        <li><strong>Interface Otimizada:</strong> Melhorias visuais para uma experiência mais fluida</li>
+        <li><strong>Performance Aprimorada:</strong> App mais rápido e responsivo</li>
+        <li><strong>Correções de Bugs:</strong> Maior estabilidade e confiabilidade</li>
+      </ul>
+      <p>Todas as novidades foram desenvolvidas seguindo os mesmos princípios de privacidade total do Paghelp.me.</p>
+    ]]></content:encoded>
+    <pubDate>Sat, 28 Sep 2024 10:00:00 -0300</pubDate>
+    <guid isPermaLink="false">paghelpme-blog-versao-2-0-26-biometria-links-2024</guid>
+    <dc:creator>Alexandre Sanlim</dc:creator>
+    <category>Atualização</category>
+    <category>Recursos</category>
+    <category>PIX</category>
+    <category>Segurança</category>
+  </item>
+
+  <!-- Post 2: 5 melhores apps PIX -->
   <item>
     <title>Os 5 melhores apps para gerenciar suas chaves PIX em 2024</title>
     <link>https://paghelpme.github.io/blog/posts/5-melhores-apps-gerenciar-chaves-pix.html</link>
@@ -53,7 +79,7 @@
     <category>Comparativo</category>
   </item>
 
-  <!-- Post 2: Segurança PIX -->
+  <!-- Post 3: Segurança PIX -->
   <item>
     <title>Como usar PIX com segurança: Dicas essenciais para proteger suas transações</title>
     <link>https://paghelpme.github.io/blog/posts/como-usar-pix-com-seguranca.html</link>
@@ -78,7 +104,7 @@
     <category>Dicas</category>
   </item>
 
-  <!-- Post 3: PIX Offline -->
+  <!-- Post 4: PIX Offline -->
   <item>
     <title>Por que gerenciar suas chaves PIX offline? Conheça os benefícios</title>
     <link>https://paghelpme.github.io/blog/posts/gerenciar-chaves-pix-offline.html</link>
@@ -102,7 +128,7 @@
     <category>Privacidade</category>
   </item>
 
-  <!-- Post 4: Recursos Paghelp.me -->
+  <!-- Post 5: Recursos Paghelp.me -->
   <item>
     <title>5 recursos do Paghelp.me que vão facilitar sua vida financeira</title>
     <link>https://paghelpme.github.io/blog/posts/5-recursos-essenciais-paghelp.html</link>
