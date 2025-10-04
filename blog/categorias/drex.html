@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Tudo sobre DREX - Real Digital brasileiro. Artigos, análises e novidades sobre a moeda digital do Banco Central, CBDC Brasil e o futuro dos pagamentos.">
+  <meta name="keywords" content="drex categoria, real digital, moeda digital brasil, cbdc brasil, banco central digital, drex artigos, real digital novidades, drex blog">
+  <meta name="author" content="Alexandre Sanlim">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="pt-BR">
+  <meta name="revisit-after" content="3 days">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://paghelpme.github.io/blog/categorias/drex.html">
+  <meta property="og:title" content="DREX - Real Digital | Blog Paghelp.me">
+  <meta property="og:description" content="Acompanhe tudo sobre o DREX, o Real Digital brasileiro. Análises, novidades e impactos da moeda digital do Banco Central.">
+  <meta property="og:image" content="https://paghelpme.github.io/src/img/metatag.png">
+  <meta property="og:site_name" content="Paghelp.me Blog">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="DREX - Real Digital | Paghelp.me">
+  <meta property="twitter:description" content="Artigos e análises sobre o DREX, a moeda digital brasileira que vai revolucionar os pagamentos.">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://paghelpme.github.io/blog/categorias/drex.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../../src/img/logo.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <title>DREX - Real Digital | Artigos e Análises | Blog Paghelp.me</title>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "DREX - Real Digital",
+    "description": "Artigos e análises sobre o DREX, o Real Digital brasileiro e seu impacto nos pagamentos digitais.",
+    "url": "https://paghelpme.github.io/blog/categorias/drex.html",
+    "isPartOf": {
+      "@type": "Blog",
+      "name": "Blog Paghelp.me",
+      "url": "https://paghelpme.github.io/blog/"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "DREX",
+      "description": "Real Digital brasileiro - moeda digital do Banco Central"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary-color: #667eea;
+      --secondary-color: #764ba2;
+      --accent-color: #004c40;
+      --drex-color: #1565c0;
+      --drex-secondary: #1976d2;
+      --text-primary: #2c3e50;
+      --text-secondary: #34495e;
+      --text-muted: #7f8c8d;
+      --bg-primary: #ffffff;
+      --glass-bg: rgba(21, 101, 192, 0.08);
+      --glass-border: rgba(21, 101, 192, 0.2);
+      --shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      --border-radius: 20px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-primary);
+      line-height: 1.7;
+      color: var(--text-primary);
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(circle at 20% 50%, rgba(21, 101, 192, 0.04) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(25, 118, 210, 0.04) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(102, 126, 234, 0.04) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .navbar {
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.95) !important;
+    }
+
+    .category-header {
+      background: linear-gradient(135deg, var(--drex-color), var(--drex-secondary));
+      color: white;
+      padding: 4rem 0;
+      margin-bottom: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .category-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      pointer-events: none;
+    }
+
+    .category-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      opacity: 0.9;
+    }
+
+    .category-stats {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--drex-color);
+      display: block;
+    }
+
+    .blog-post {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--shadow);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      transition: all 0.3s ease;
+      border-left: 4px solid var(--drex-color);
+    }
+
+    .blog-post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(21, 101, 192, 0.15);
+    }
+
+    .blog-post-title {
+      color: var(--drex-color);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-decoration: none;
+    }
+
+    .blog-post-title:hover {
+      color: var(--drex-secondary);
+      text-decoration: none;
+    }
+
+    .blog-post-meta {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .read-more-btn {
+      background: linear-gradient(135deg, var(--drex-color), var(--drex-secondary));
+      border: none;
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 25px;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .read-more-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(21, 101, 192, 0.3);
+      color: white;
+      text-decoration: none;
+    }
+
+    .category-navigation {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+
+    .category-link {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      margin: 0.25rem;
+      background: white;
+      border: 2px solid var(--glass-border);
+      border-radius: 25px;
+      text-decoration: none;
+      color: var(--text-secondary);
+      transition: all 0.3s ease;
+    }
+
+    .category-link:hover {
+      background: var(--drex-color);
+      color: white;
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    .category-link.active {
+      background: var(--drex-color);
+      color: white;
+      border-color: var(--drex-color);
+    }
+
+    .sidebar-widget {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .widget-title {
+      color: var(--drex-color);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      background: linear-gradient(135deg, var(--accent-color), #00695c) !important;
+      margin-top: 5rem;
+    }
+
+    @media (max-width: 768px) {
+      .category-header {
+        padding: 2rem 0;
+      }
+      
+      .category-icon {
+        font-size: 3rem;
+      }
+      
+      .blog-post {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="../../">
+        <img src="../../src/img/logo.png" alt="Paghelp.me" width="40" height="40" class="me-2 rounded">
+        <strong style="color: var(--accent-color);">Paghelp.me</strong>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./drex.html">DREX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://play.google.com/store/apps/details?id=io.github.paghelpme" target="_blank">
+              <i class="fab fa-google-play me-1"></i>Download
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Category Header -->
+  <header class="category-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <div class="category-icon">
+            <i class="fas fa-coins"></i>
+          </div>
+          <h1 class="display-4 fw-bold mb-3">DREX - Real Digital</h1>
+          <p class="lead mb-4">
+            Descubra tudo sobre o DREX, a moeda digital oficial do Brasil. Análises, novidades e o impacto 
+            da CBDC brasileira no futuro dos pagamentos digitais.
+          </p>
+          <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+            <span><i class="fas fa-newspaper me-2"></i>1 Artigo</span>
+            <span><i class="fas fa-calendar me-2"></i>Atualizado em Out 2024</span>
+            <span><i class="fas fa-tag me-2"></i>Moeda Digital</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    
+    <!-- Category Stats -->
+    <div class="category-stats">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="stat-item">
+            <span class="stat-number">1</span>
+            <span class="text-muted">Artigo Publicado</span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-item">
+            <span class="stat-number">2025</span>
+            <span class="text-muted">Previsão Lançamento</span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-item">
+            <span class="stat-number">CBDC</span>
+            <span class="text-muted">Tipo de Moeda</span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-item">
+            <span class="stat-number">BC</span>
+            <span class="text-muted">Banco Central</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8">
+        
+        <!-- Blog Posts -->
+        <article class="blog-post">
+          <h2>
+            <a href="../posts/drex-real-digital-brasil-futuro-pagamentos.html" class="blog-post-title">
+              <i class="fas fa-coins me-2"></i>
+              DREX: O Real Digital que vai revolucionar os pagamentos no Brasil
+            </a>
+          </h2>
+          <div class="blog-post-meta">
+            <i class="fas fa-calendar me-2"></i>4 de Outubro, 2024
+            <span class="mx-2">•</span>
+            <i class="fas fa-user me-2"></i>Alexandre Sanlim
+            <span class="mx-2">•</span>
+            <i class="fas fa-clock me-2"></i>6 min de leitura
+          </div>
+          <p class="blog-post-excerpt">
+            Descubra tudo sobre o DREX, o Real Digital brasileiro. Como funciona, suas diferenças com o PIX, 
+            cronograma de lançamento e como essa moeda digital vai transformar o sistema financeiro nacional. 
+            Uma análise completa sobre a CBDC brasileira e seus impactos nos pagamentos digitais...
+          </p>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge" style="background: var(--drex-color);">DREX</span>
+            <span class="badge" style="background: var(--drex-secondary);">Real Digital</span>
+            <span class="badge bg-secondary">CBDC</span>
+            <span class="badge bg-success">Banco Central</span>
+          </div>
+          <a href="../posts/drex-real-digital-brasil-futuro-pagamentos.html" class="read-more-btn">
+            Ler artigo completo <i class="fas fa-arrow-right ms-1"></i>
+          </a>
+        </article>
+
+        <!-- Placeholder for future posts -->
+        <div class="text-center py-5">
+          <i class="fas fa-hourglass-half fa-3x text-muted mb-3"></i>
+          <h4 class="text-muted">Mais conteúdo em breve</h4>
+          <p class="text-muted">
+            Acompanhe as novidades sobre o DREX e o desenvolvimento do Real Digital brasileiro. 
+            Novos artigos serão publicados conforme surgirem atualizações do Banco Central.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        
+        <!-- About DREX Widget -->
+        <div class="sidebar-widget">
+          <h4 class="widget-title">
+            <i class="fas fa-info-circle me-2"></i>Sobre o DREX
+          </h4>
+          <p class="text-muted mb-3">
+            O DREX é a moeda digital oficial do Brasil, desenvolvida pelo Banco Central como 
+            uma versão digital do Real brasileiro.
+          </p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: var(--drex-color);"></i>Tecnologia Blockchain</li>
+            <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: var(--drex-color);"></i>Controle do Banco Central</li>
+            <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: var(--drex-color);"></i>Lançamento previsto para 2025</li>
+            <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: var(--drex-color);"></i>Complementar ao PIX</li>
+          </ul>
+        </div>
+
+        <!-- Related Topics -->
+        <div class="sidebar-widget">
+          <h4 class="widget-title">
+            <i class="fas fa-link me-2"></i>Tópicos Relacionados
+          </h4>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="./pix.html" class="text-decoration-none">
+                <i class="fas fa-credit-card me-2"></i>PIX - Sistema de Pagamentos
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="./seguranca.html" class="text-decoration-none">
+                <i class="fas fa-shield-alt me-2"></i>Segurança em Pagamentos
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="./apps.html" class="text-decoration-none">
+                <i class="fas fa-mobile-alt me-2"></i>Aplicativos Financeiros
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="sidebar-widget">
+          <h4 class="widget-title">
+            <i class="fas fa-bell me-2"></i>Novidades DREX
+          </h4>
+          <p class="text-muted mb-3">
+            Seja o primeiro a saber sobre atualizações do Real Digital brasileiro.
+          </p>
+          <div class="d-grid">
+            <a href="../" class="btn" style="background: var(--drex-color); color: white;">
+              <i class="fas fa-rss me-2"></i>Acompanhar Blog
+            </a>
+          </div>
+        </div>
+
+        <!-- Download App -->
+        <div class="sidebar-widget">
+          <h4 class="widget-title">
+            <i class="fas fa-download me-2"></i>Baixe o Paghelp.me
+          </h4>
+          <p class="text-muted mb-3">
+            Gerencie suas chaves PIX hoje e esteja preparado para o futuro do DREX.
+          </p>
+          <div class="d-grid gap-2">
+            <a href="https://play.google.com/store/apps/details?id=io.github.paghelpme" 
+               class="btn btn-success" target="_blank">
+              <i class="fab fa-google-play me-2"></i>Google Play
+            </a>
+            <a href="https://paghelpme.expo.app/" 
+               class="btn btn-outline-primary" target="_blank">
+              <i class="fas fa-globe me-2"></i>Versão Web
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Category Navigation -->
+    <div class="category-navigation">
+      <h4 class="mb-3">
+        <i class="fas fa-folder-open me-2"></i>Explorar Outras Categorias
+      </h4>
+      <div class="d-flex flex-wrap">
+        <a href="./seguranca.html" class="category-link">
+          <i class="fas fa-shield-alt me-1"></i>Segurança
+        </a>
+        <a href="./apps.html" class="category-link">
+          <i class="fas fa-mobile-alt me-1"></i>Apps
+        </a>
+        <a href="./tutoriais.html" class="category-link">
+          <i class="fas fa-book me-1"></i>Tutoriais
+        </a>
+        <a href="./comparativos.html" class="category-link">
+          <i class="fas fa-newspaper me-1"></i>Comparativos
+        </a>
+        <a href="./pix.html" class="category-link">
+          <i class="fas fa-credit-card me-1"></i>PIX
+        </a>
+        <a href="./atualizacoes.html" class="category-link">
+          <i class="fas fa-rocket me-1"></i>Atualizações
+        </a>
+        <a href="./drex.html" class="category-link active">
+          <i class="fas fa-coins me-1"></i>DREX
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h5 style="color: white; font-weight: 600;">Paghelp.me</h5>
+          <p style="color: rgba(255, 255, 255, 0.8);">
+            Preparando você para o futuro dos pagamentos digitais - do PIX ao DREX.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
+            © 2024 Paghelp.me - Inovação em pagamentos
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
