@@ -5,7 +5,431 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Artigos sobre PIX - Tudo sobre o sistema de pagamentos instantâneos do Brasil. Dicas, tutoriais e novidades PIX.">
-  <meta name="keywords" content="pix, artigos pix, sistema pagamentos, pix brasil, banco central pix, pagamentos instantaneos">
+  <meta name="keywords" content="pix categoria, artigos pix, dicas pix, tutoriais pix, novidades pix, sistema pix brasil, banco central pix, pagamentos instantaneos, chaves pix, qr code pix, transferencia pix, pix agendado, pix offline">
+  <meta name="author" content="Alexandre Sanlim">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="pt-BR">
+  <meta name="revisit-after" content="1 days">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://paghelpme.github.io/blog/categorias/pix.html">
+  <meta property="og:title" content="Categoria PIX - Artigos e Novidades sobre PIX">
+  <meta property="og:description" content="Tudo sobre PIX: dicas, tutoriais, novidades e análises sobre o sistema de pagamentos instantâneos do Brasil.">
+  <meta property="og:image" content="https://paghelpme.github.io/src/img/metatag.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Paghelp.me Blog PIX">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://paghelpme.github.io/blog/categorias/pix.html">
+  <meta property="twitter:title" content="PIX - Artigos e Tutoriais">
+  <meta property="twitter:description" content="Encontre os melhores artigos sobre PIX, tutoriais e novidades do sistema de pagamentos brasileiro.">
+  <meta property="twitter:image" content="https://paghelpme.github.io/src/img/metatag.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://paghelpme.github.io/blog/categorias/pix.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../../src/img/logo.png">
+  <link rel="apple-touch-icon" href="../../src/img/logo.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <title>PIX - Artigos e Novidades sobre Pagamentos Instantâneos | Paghelp.me</title>
+
+  <!-- Dados estruturados para SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Categoria PIX - Artigos e Novidades",
+    "description": "Artigos sobre PIX - Tudo sobre o sistema de pagamentos instantâneos do Brasil. Dicas, tutoriais e novidades PIX.",
+    "url": "https://paghelpme.github.io/blog/categorias/pix.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Paghelp.me",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://paghelpme.github.io/src/img/logo.png"
+      }
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Artigos sobre PIX",
+      "numberOfItems": "6"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary-color: #667eea;
+      --secondary-color: #764ba2;
+      --accent-color: #004c40;
+      --pix-color: #00acc1;
+      --pix-secondary: #0097a7;
+      --text-primary: #2c3e50;
+      --text-secondary: #34495e;
+      --text-muted: #7f8c8d;
+      --bg-primary: #ffffff;
+      --glass-bg: rgba(0, 172, 193, 0.08);
+      --glass-border: rgba(0, 172, 193, 0.2);
+      --shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      --border-radius: 20px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-primary);
+      line-height: 1.7;
+      color: var(--text-primary);
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(circle at 20% 50%, rgba(0, 172, 193, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(0, 151, 167, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(102, 126, 234, 0.03) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .navbar {
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.95) !important;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-brand {
+      font-weight: 600;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar-brand:hover {
+      transform: scale(1.05);
+    }
+
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      color: var(--text-primary) !important;
+      padding: 0.5rem 1rem !important;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      margin: 0 0.2rem;
+    }
+
+    .navbar-nav .nav-link:hover {
+      background: var(--glass-bg);
+      color: var(--accent-color) !important;
+      transform: translateY(-1px);
+    }
+
+    .navbar-nav .nav-link.active {
+      background: var(--accent-color);
+      color: white !important;
+    }
+
+    .navbar-nav .nav-link.active:hover {
+      background: var(--accent-color);
+      color: white !important;
+    }
+
+    /* Category Header */
+    .category-header {
+      background: linear-gradient(135deg, var(--pix-color), var(--pix-secondary));
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      border-radius: var(--border-radius);
+      margin: 2rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .category-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      pointer-events: none;
+    }
+
+    .category-header h1 {
+      color: white;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
+
+    .category-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      opacity: 0.9;
+    }
+
+    .blog-post {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--shadow);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 172, 193, 0.15);
+    }
+
+    .blog-post-title {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 1.4;
+      transition: color 0.3s ease;
+    }
+
+    .blog-post-title:hover {
+      color: var(--pix-color);
+      text-decoration: none;
+    }
+
+    .blog-post-meta {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin: 1rem 0;
+    }
+
+    .blog-post-excerpt {
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .read-more-btn {
+      background: linear-gradient(135deg, var(--pix-color), var(--pix-secondary));
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .read-more-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0, 172, 193, 0.3);
+      color: white;
+      text-decoration: none;
+    }
+
+    .breadcrumb-nav {
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--border-radius);
+      padding: 1rem 2rem;
+      margin: 1rem 0;
+    }
+
+    .breadcrumb {
+      margin-bottom: 0;
+      background: transparent;
+    }
+
+    .breadcrumb-item a {
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+
+    .breadcrumb-item a:hover {
+      color: var(--primary-color);
+    }
+
+    .breadcrumb-item.active {
+      color: var(--text-secondary);
+    }
+
+    footer {
+      background: linear-gradient(135deg, var(--accent-color), #00695c) !important;
+      margin-top: 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, transparent, rgba(0, 76, 64, 0.08), transparent);
+      pointer-events: none;
+    }
+
+    footer h5 {
+      color: #ffffff !important;
+      font-weight: 700 !important;
+      font-size: 1.5rem !important;
+    }
+
+    footer p {
+      color: rgba(255, 255, 255, 0.9) !important;
+    }
+
+    footer .text-white {
+      color: #ffffff !important;
+      transition: color 0.3s ease;
+    }
+
+    footer .text-white:hover {
+      color: var(--accent-color) !important;
+    }
+
+    @media (max-width: 991px) {
+      .navbar-nav .nav-link {
+        text-align: center;
+        margin: 0.2rem 0;
+      }
+
+      .category-header {
+        padding: 2rem 1rem;
+      }
+
+      .category-header h1 {
+        font-size: 2rem;
+      }
+
+      .category-icon {
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="../../">
+        <img src="../../src/img/logo.png" alt="Paghelp.me" width="40" height="40" class="me-2 rounded">
+        <strong style="color: var(--accent-color);">Paghelp.me</strong>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./pix.html">PIX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://play.google.com/store/apps/details?id=io.github.paghelpme" target="_blank">
+              <i class="fab fa-google-play me-1"></i>Download
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="margin-top: 80px;">
+    
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-nav">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../../">Início</a></li>
+        <li class="breadcrumb-item"><a href="../">Blog</a></li>
+        <li class="breadcrumb-item active" aria-current="page">PIX</li>
+      </ol>
+    </nav>
+
+    <!-- Category Header -->
+    <div class="category-header">
+      <div class="category-icon">
+        <i class="fas fa-credit-card"></i>
+      </div>
+      <h1>PIX</h1>
+      <p class="lead">
+        Tudo sobre o sistema de pagamentos instantâneos do Brasil
+      </p>
+      <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 0;">
+        6 artigos sobre PIX, chaves PIX e pagamentos instantâneos
+      </p>
+    </div>
+
+    <!-- Blog Posts -->
+    <div class="row">
+      <div class="col-lg-8">
+        
+        <!-- Post 1 - PIX Agendado -->
+        <article class="blog-post">
+          <h2>
+            <a href="../posts/pix-agendado-como-funciona-guia-completo.html" class="blog-post-title">
+              <i class="fas fa-clock me-2" style="color: var(--pix-color);"></i>
+              PIX Agendado: Como funciona e como usar - Guia Completo 2024
+            </a>
+          </h2>
+          <div class="blog-post-meta">
+            <i class="fas fa-calendar me-2"></i>4 de Outubro, 2024
+            <span class="mx-2">•</span>
+            <i class="fas fa-user me-2"></i>Alexandre Sanlim
+            <span class="mx-2">•</span>
+            <i class="fas fa-tag me-2"></i>PIX, Tutorial, Agendamento
+          </div>
+          <p class="blog-post-excerpt">
+            Organize sua vida financeira com o PIX Agendado. Aprenda como programar transferências PIX, 
+            nunca mais esqueça um pagamento importante e descubra todos os casos de uso práticos desta 
+            funcionalidade essencial. Tutorial completo com passo a passo e dicas de segurança.
+          </p>
+          <a href="../posts/pix-agendado-como-funciona-guia-completo.html" class="read-more-btn">
+            Ver guia completo <i class="fas fa-arrow-right ms-1"></i>
+          </a>
+        </article>
+
+        <!-- Post 2 - Segurança PIX -->words" content="pix, artigos pix, sistema pagamentos, pix brasil, banco central pix, pagamentos instantaneos">
   <meta name="author" content="Alexandre Sanlim">
   <meta name="robots" content="index, follow">
 
@@ -249,7 +673,7 @@
       </div>
       <h1>PIX Brasil</h1>
       <p class="lead">Tudo sobre o sistema de pagamentos instantâneos que revolucionou o Brasil</p>
-      <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 0;">5 artigos sobre PIX, chaves PIX e pagamentos instantâneos</p>
+      <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 0;">6 artigos sobre PIX, chaves PIX e pagamentos instantâneos</p>
     </div>
 
     <div class="row">
@@ -280,7 +704,32 @@
           </a>
         </article>
 
-        <!-- Post 2 - Melhores Apps -->
+        <!-- Post 2 - Segurança PIX -->
+        <article class="blog-post">
+          <h2>
+            <a href="../posts/como-usar-pix-com-seguranca.html" class="blog-post-title">
+              <i class="fas fa-shield-alt me-2" style="color: var(--pix-color);"></i>
+              Como usar PIX com segurança: Dicas essenciais para proteger suas transações
+            </a>
+          </h2>
+          <div class="blog-post-meta">
+            <i class="fas fa-calendar me-2"></i>27 de Setembro, 2024
+            <span class="mx-2">•</span>
+            <i class="fas fa-user me-2"></i>Alexandre Sanlim
+            <span class="mx-2">•</span>
+            <i class="fas fa-tag me-2"></i>PIX, Segurança
+          </div>
+          <p class="blog-post-excerpt">
+            O PIX revolucionou os pagamentos no Brasil, mas é importante conhecer as melhores práticas de segurança. 
+            Neste artigo, você aprenderá como proteger suas chaves PIX, identificar golpes comuns e usar o sistema 
+            de pagamentos instantâneos com máxima segurança e tranquilidade.
+          </p>
+          <a href="../posts/como-usar-pix-com-seguranca.html" class="read-more-btn">
+            Ver dicas de segurança <i class="fas fa-arrow-right ms-1"></i>
+          </a>
+        </article>
+
+        <!-- Post 3 - Melhores Apps -->
         <article class="blog-post">
           <h2>
             <a href="../posts/5-melhores-apps-gerenciar-chaves-pix.html" class="blog-post-title">
@@ -305,7 +754,32 @@
           </a>
         </article>
 
-        <!-- Post 3 - Segurança PIX -->
+        <!-- Post 3 - Melhores Apps -->
+        <article class="blog-post">
+          <h2>
+            <a href="../posts/5-melhores-apps-gerenciar-chaves-pix.html" class="blog-post-title">
+              <i class="fas fa-star me-2" style="color: var(--pix-color);"></i>
+              Os 5 melhores apps para gerenciar suas chaves PIX em 2024
+            </a>
+          </h2>
+          <div class="blog-post-meta">
+            <i class="fas fa-calendar me-2"></i>27 de Setembro, 2024
+            <span class="mx-2">•</span>
+            <i class="fas fa-user me-2"></i>Alexandre Sanlim
+            <span class="mx-2">•</span>
+            <i class="fas fa-tag me-2"></i>PIX, Apps, Comparativo
+          </div>
+          <p class="blog-post-excerpt">
+            Descubra os 5 melhores aplicativos para gerenciar suas chaves PIX em 2024. Análise completa com 
+            prós e contras, preços e funcionalidades. O Paghelp.me lidera o ranking por sua privacidade total 
+            e funcionamento offline. Guia definitivo para escolher o melhor app PIX.
+          </p>
+          <a href="../posts/5-melhores-apps-gerenciar-chaves-pix.html" class="read-more-btn">
+            Ver ranking completo <i class="fas fa-arrow-right ms-1"></i>
+          </a>
+        </article>
+
+        <!-- Post 4 - PIX Offline -->
         <article class="blog-post">
           <h2>
             <a href="../posts/como-usar-pix-com-seguranca.html" class="blog-post-title">
