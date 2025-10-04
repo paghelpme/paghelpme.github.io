@@ -2,7 +2,30 @@
 <rss version="2.0" 
      xmlns:content="http://purl.org/rss/1.0/modules/content/"
      xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dc="http://purl.org/  <!-- Post 6: Recursos essenciais -->
+  <item>
+    <title>5 recursos do Paghelp.me que vão facilitar sua vida financeira</title>
+    <link>https://paghelpme.github.io/blog/posts/5-recursos-essenciais-paghelp.html</link>
+    <description>Conheça os principais recursos do Paghelp.me que tornam o gerenciamento de chaves PIX mais prático e eficiente. Tutorial completo com dicas e exemplos práticos.</description>
+    <content:encoded><![CDATA[
+      <p>Conheça os principais recursos do Paghelp.me que tornam o gerenciamento de chaves PIX mais prático e eficiente.</p>
+      <p>Desde a criação de QR Codes até o backup seguro de suas chaves, descubra como otimizar seu uso do aplicativo.</p>
+      <p><strong>5 recursos essenciais:</strong></p>
+      <ol>
+        <li>Gerenciamento Inteligente de Chaves</li>
+        <li>Geração de QR Codes Offline</li>
+        <li>Backup e Sincronização Local</li>
+        <li>Cópia Rápida e Compartilhamento</li>
+        <li>Estatísticas e Relatórios</li>
+      </ol>
+    ]]></content:encoded>
+    <pubDate>Mon, 23 Sep 2024 11:00:00 -0300</pubDate>
+    <guid isPermaLink="false">paghelpme-blog-5-recursos-essenciais-2024</guid>
+    <dc:creator>Alexandre Sanlim</dc:creator>
+    <category>Tutorial</category>
+    <category>Recursos</category>
+    <category>Paghelp.me</category>
+  </item>c/elements/1.1/"
      xmlns:atom="http://www.w3.org/2005/Atom"
      xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
      xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
@@ -28,7 +51,32 @@
     <height>400</height>
   </image>
 
-  <!-- Post 1: Nova versão 2.0.26 com Biometria -->
+  <!-- Post 1: DREX Real Digital -->
+  <item>
+    <title>DREX: O Real Digital que vai revolucionar os pagamentos no Brasil</title>
+    <link>https://paghelpme.github.io/blog/posts/drex-real-digital-brasil-futuro-pagamentos.html</link>
+    <description>Descubra tudo sobre o DREX, o Real Digital brasileiro. Como funciona, diferenças do PIX, cronograma de lançamento e impacto nos pagamentos digitais.</description>
+    <content:encoded><![CDATA[
+      <p>O DREX (Digital Real EXperience) é a moeda digital oficial do Brasil, desenvolvida pelo Banco Central como uma versão digital do Real brasileiro. Também conhecido como CBDC (Central Bank Digital Currency), o DREX representa a evolução natural do sistema monetário brasileiro na era digital.</p>
+      <p><strong>Principais diferenças entre DREX e PIX:</strong></p>
+      <ul>
+        <li><strong>PIX:</strong> Sistema de pagamentos instantâneos que transfere dinheiro entre contas</li>
+        <li><strong>DREX:</strong> É o próprio dinheiro digital, armazenado em carteiras digitais</li>
+        <li><strong>Tecnologia:</strong> DREX usa blockchain, enquanto PIX é centralizado</li>
+        <li><strong>Intermediários:</strong> DREX pode ser peer-to-peer direto</li>
+      </ul>
+      <p>O lançamento está previsto para 2025, colocando o Brasil na vanguarda da inovação financeira mundial.</p>
+    ]]></content:encoded>
+    <pubDate>Fri, 04 Oct 2024 10:00:00 -0300</pubDate>
+    <guid isPermaLink="false">paghelpme-blog-drex-real-digital-brasil-2024</guid>
+    <dc:creator>Alexandre Sanlim</dc:creator>
+    <category>DREX</category>
+    <category>Real Digital</category>
+    <category>CBDC</category>
+    <category>Banco Central</category>
+  </item>
+
+  <!-- Post 2: Nova versão 2.0.26 com Biometria -->
   <item>
     <title>Paghelp.me 2.0.26: Biometria e Links de Pagamento chegam ao app PIX</title>
     <link>https://paghelpme.github.io/blog/posts/paghelp-versao-2-0-26-biometria-links-pagamento.html</link>
@@ -54,7 +102,33 @@
     <category>Segurança</category>
   </item>
 
-  <!-- Post 2: 5 melhores apps PIX -->
+  <!-- Post 2: Nova versão 2.0.26 com Biometria -->
+  <item>
+    <title>Paghelp.me 2.0.26: Biometria e Links de Pagamento chegam ao app PIX</title>
+    <link>https://paghelpme.github.io/blog/posts/paghelp-versao-2-0-26-biometria-links-pagamento.html</link>
+    <description>Conheça as novidades da versão 2.0.26 do Paghelp.me: autenticação biométrica para acesso seguro e links de pagamento para facilitar o compartilhamento PIX.</description>
+    <content:encoded><![CDATA[
+      <p>A versão 2.0.26 representa um grande passo na evolução do Paghelp.me, trazendo funcionalidades essenciais que nossos usuários tanto solicitavam.</p>
+      <p><strong>Principais novidades:</strong></p>
+      <ul>
+        <li><strong>Autenticação Biométrica:</strong> Proteja o acesso ao app usando impressão digital ou reconhecimento facial</li>
+        <li><strong>Links de Pagamento:</strong> Gere links diretos para suas chaves PIX e compartilhe facilmente</li>
+        <li><strong>Interface Otimizada:</strong> Melhorias visuais para uma experiência mais fluida</li>
+        <li><strong>Performance Aprimorada:</strong> App mais rápido e responsivo</li>
+        <li><strong>Correções de Bugs:</strong> Maior estabilidade e confiabilidade</li>
+      </ul>
+      <p>Todas as novidades foram desenvolvidas seguindo os mesmos princípios de privacidade total do Paghelp.me.</p>
+    ]]></content:encoded>
+    <pubDate>Sat, 28 Sep 2024 10:00:00 -0300</pubDate>
+    <guid isPermaLink="false">paghelpme-blog-versao-2-0-26-biometria-links-2024</guid>
+    <dc:creator>Alexandre Sanlim</dc:creator>
+    <category>Atualização</category>
+    <category>Recursos</category>
+    <category>PIX</category>
+    <category>Segurança</category>
+  </item>
+
+  <!-- Post 3: 5 melhores apps PIX -->
   <item>
     <title>Os 5 melhores apps para gerenciar suas chaves PIX em 2024</title>
     <link>https://paghelpme.github.io/blog/posts/5-melhores-apps-gerenciar-chaves-pix.html</link>
@@ -79,7 +153,32 @@
     <category>Comparativo</category>
   </item>
 
-  <!-- Post 3: Segurança PIX -->
+  <!-- Post 3: 5 melhores apps PIX -->
+  <item>
+    <title>Os 5 melhores apps para gerenciar suas chaves PIX em 2024</title>
+    <link>https://paghelpme.github.io/blog/posts/5-melhores-apps-gerenciar-chaves-pix.html</link>
+    <description>Descubra os 5 melhores aplicativos para gerenciar suas chaves PIX em 2024. Análise completa com prós e contras, preços e funcionalidades. O Paghelp.me lidera o ranking por sua privacidade total e funcionamento offline.</description>
+    <content:encoded><![CDATA[
+      <p>Descubra os 5 melhores aplicativos para gerenciar suas chaves PIX em 2024. Análise completa com prós e contras, preços e funcionalidades.</p>
+      <p>O Paghelp.me lidera o ranking por sua privacidade total, funcionamento offline e por ser completamente gratuito. Confira nossa comparação detalhada com todos os recursos, preços e avaliações dos usuários.</p>
+      <p><strong>Ranking completo:</strong></p>
+      <ol>
+        <li>Paghelp.me - Gratuito, 100% offline</li>
+        <li>PIX Manager - Freemium, R$ 9,90/mês</li>
+        <li>ChavePIX Pro - Empresarial, R$ 14,90/mês</li>
+        <li>QR PIX Generator - Gratuito com anúncios</li>
+        <li>Meus PIX - Compra única R$ 4,90</li>
+      </ol>
+    ]]></content:encoded>
+    <pubDate>Fri, 27 Sep 2024 10:00:00 -0300</pubDate>
+    <guid isPermaLink="false">paghelpme-blog-5-melhores-apps-pix-2024</guid>
+    <dc:creator>Alexandre Sanlim</dc:creator>
+    <category>Apps</category>
+    <category>PIX</category>
+    <category>Comparativo</category>
+  </item>
+
+  <!-- Post 4: Segurança PIX -->
   <item>
     <title>Como usar PIX com segurança: Dicas essenciais para proteger suas transações</title>
     <link>https://paghelpme.github.io/blog/posts/como-usar-pix-com-seguranca.html</link>
@@ -104,7 +203,31 @@
     <category>Dicas</category>
   </item>
 
-  <!-- Post 4: PIX Offline -->
+  <!-- Post 5: PIX Offline -->
+  <item>
+    <title>Por que gerenciar suas chaves PIX offline? Conheça os benefícios</title>
+    <link>https://paghelpme.github.io/blog/posts/gerenciar-chaves-pix-offline.html</link>
+    <description>Descubra os benefícios de manter suas chaves PIX organizadas localmente no seu dispositivo com o Paghelp.me. Privacidade, segurança e controle total dos seus dados.</description>
+    <content:encoded><![CDATA[
+      <p>Descubra as vantagens de manter suas chaves PIX organizadas localmente no seu dispositivo.</p>
+      <p>O Paghelp.me oferece um gerenciamento completamente offline, garantindo que suas informações pessoais permaneçam seguras e privadas.</p>
+      <p><strong>Principais benefícios:</strong></p>
+      <ul>
+        <li>Privacidade Total</li>
+        <li>Segurança Máxima</li>
+        <li>Performance Superior</li>
+        <li>Economia de Dados</li>
+      </ul>
+    ]]></content:encoded>
+    <pubDate>Wed, 25 Sep 2024 14:00:00 -0300</pubDate>
+    <guid isPermaLink="false">paghelpme-blog-pix-offline-beneficios-2024</guid>
+    <dc:creator>Alexandre Sanlim</dc:creator>
+    <category>PIX</category>
+    <category>Offline</category>
+    <category>Privacidade</category>
+  </item>
+
+  <!-- Post 6: Recursos essenciais -->
   <item>
     <title>Por que gerenciar suas chaves PIX offline? Conheça os benefícios</title>
     <link>https://paghelpme.github.io/blog/posts/gerenciar-chaves-pix-offline.html</link>

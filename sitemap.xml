@@ -87,7 +87,22 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://paghelpme.github.io/blog/categorias/drex.html</loc>
+    <lastmod>2024-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Posts do Blog -->
+
+  <!-- Post: DREX Real Digital -->
+  <url>
+    <loc>https://paghelpme.github.io/blog/posts/drex-real-digital-brasil-futuro-pagamentos.html</loc>
+    <lastmod>2024-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
   <!-- Post: Versão 2.0.26 com Biometria e Links -->
   <url>
