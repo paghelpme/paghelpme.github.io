@@ -96,6 +96,22 @@
 
   <!-- Posts do Blog -->
 
+  <!-- Post: Chave PIX Aleatória Benefícios -->
+  <url>
+    <loc>https://paghelpme.github.io/blog/posts/beneficios-chave-pix-aleatoria-seguranca-privacidade.html</loc>
+    <lastmod>2024-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Post: PIX Agendado -->
+  <url>
+    <loc>https://paghelpme.github.io/blog/posts/pix-agendado-como-funciona-guia-completo.html</loc>
+    <lastmod>2024-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Post: DREX Real Digital -->
   <url>
     <loc>https://paghelpme.github.io/blog/posts/drex-real-digital-brasil-futuro-pagamentos.html</loc>

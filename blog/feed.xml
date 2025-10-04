@@ -51,7 +51,61 @@
     <height>400</height>
   </image>
 
-  <!-- Post 1: DREX Real Digital -->
+  <!-- Post 1: Chave PIX Aleatória -->
+  <item>
+    <title>Chave PIX Aleatória: 7 Benefícios para sua Segurança e Privacidade</title>
+    <link>https://paghelpme.github.io/blog/posts/beneficios-chave-pix-aleatoria-seguranca-privacidade.html</link>
+    <description>Descubra os benefícios da chave PIX aleatória: mais segurança, privacidade e proteção contra golpes. Aprenda quando e como usar chaves aleatórias PIX.</description>
+    <content:encoded><![CDATA[
+      <p>A chave PIX aleatória é um código único gerado automaticamente pelo sistema PIX, composto por 32 caracteres alfanuméricos que funciona como um identificador completamente anônimo para receber pagamentos.</p>
+      <p><strong>7 principais benefícios:</strong></p>
+      <ul>
+        <li><strong>Máxima Privacidade:</strong> Não revela CPF, telefone ou e-mail</li>
+        <li><strong>Proteção Contra Golpes:</strong> Dados inúteis para criminosos</li>
+        <li><strong>Controle Total:</strong> Pode ser excluída e recriada quando necessário</li>
+        <li><strong>Ideal para Vendas Online:</strong> Receba de desconhecidos com segurança</li>
+        <li><strong>Evita Spam:</strong> Elimina ligações e mensagens indesejadas</li>
+        <li><strong>Múltiplas Chaves:</strong> Até 5 por conta para diferentes usos</li>
+        <li><strong>Compatibilidade Universal:</strong> Funciona em todos os bancos PIX</li>
+      </ul>
+      <p>Casos de uso: vendas online, grupos, freelancers, aluguel e qualquer situação que exija privacidade máxima.</p>
+    ]]></content:encoded>
+    <pubDate>Fri, 04 Oct 2024 14:00:00 -0300</pubDate>
+    <guid isPermaLink="false">paghelpme-blog-chave-pix-aleatoria-beneficios-2024</guid>
+    <dc:creator>Alexandre Sanlim</dc:creator>
+    <category>Segurança</category>
+    <category>PIX</category>
+    <category>Privacidade</category>
+    <category>Chaves PIX</category>
+  </item>
+
+  <!-- Post 2: PIX Agendado -->
+  <item>
+    <title>PIX Agendado: Como funciona e como usar - Guia Completo 2024</title>
+    <link>https://paghelpme.github.io/blog/posts/pix-agendado-como-funciona-guia-completo.html</link>
+    <description>Aprenda tudo sobre PIX Agendado: como funciona, como agendar transferências PIX, vantagens do agendamento e como usar no Paghelp.me. Guia completo 2024.</description>
+    <content:encoded><![CDATA[
+      <p>O PIX Agendado é uma funcionalidade do sistema de pagamentos instantâneos brasileiro que permite programar transferências PIX para serem executadas em uma data e horário específicos no futuro.</p>
+      <p><strong>Como funciona:</strong></p>
+      <ul>
+        <li><strong>Execução Automática:</strong> A transferência acontece sem intervenção manual</li>
+        <li><strong>Flexibilidade de Datas:</strong> Pode ser agendado para qualquer data futura</li>
+        <li><strong>Cancelamento:</strong> Possível cancelar até antes da execução</li>
+        <li><strong>Notificações:</strong> Confirmações automáticas de execução</li>
+      </ul>
+      <p><strong>Casos de uso práticos:</strong> Pagamento de aluguel, condomínio, prestações, aniversários, aportes de investimento e muito mais.</p>
+      <p>Organize sua vida financeira e nunca mais esqueça um pagamento importante!</p>
+    ]]></content:encoded>
+    <pubDate>Fri, 04 Oct 2024 12:00:00 -0300</pubDate>
+    <guid isPermaLink="false">paghelpme-blog-pix-agendado-guia-completo-2024</guid>
+    <dc:creator>Alexandre Sanlim</dc:creator>
+    <category>PIX</category>
+    <category>Tutorial</category>
+    <category>Agendamento</category>
+    <category>Organização Financeira</category>
+  </item>
+
+  <!-- Post 2: DREX Real Digital -->
   <item>
     <title>DREX: O Real Digital que vai revolucionar os pagamentos no Brasil</title>
     <link>https://paghelpme.github.io/blog/posts/drex-real-digital-brasil-futuro-pagamentos.html</link>
